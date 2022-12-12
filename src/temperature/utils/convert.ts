@@ -18,7 +18,7 @@ const convert = ( { input, from, to }: props ): number => {
 		case '°C': result = celciusToKelvin(input); break; // prettier-ignore
 		case '°F': result = fahrenheitToKelvin(input); break; // prettier-ignore
 		case '°R': result = rankineToKelvin(input); break; // prettier-ignore
-		default: result = input; break; // prettier-ignore
+		default: result = input; // prettier-ignore
 	}
 
 	switch ( to ) {

@@ -15,4 +15,5 @@ document.addEventListener( 'DOMContentLoaded', function () {
 	};
 
 	form.addEventListener( 'change', render );
+	form.addEventListener( 'input', render );
 } );
