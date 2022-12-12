@@ -25,6 +25,7 @@
 		"@wordpress/prettier-config": "^2.4.0",
 		"@wordpress/scripts": "^24.6.0",
 		"bootstrap": "^5.2.3",
+		"prettier": "npm:wp-prettier@2.6.2",
 		"react-bootstrap": "^2.7.0",
 		"sass": "^1.56.2",
 		"typescript": "^4.8.4"
