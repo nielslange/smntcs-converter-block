@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "smntcs/temperature-converter",
+	"name": "smntcs/length-converter",
 	"version": "1.0.0",
-	"title": "Temperature Converter",
+	"title": "Length Converter",
 	"category": "widgets",
 	"icon": "randomize",
-	"description": "Convert temperatures between different units.",
+	"description": "Convert lengths between different units.",
 	"supports": {
 		"html": false,
 		"multiple": false
