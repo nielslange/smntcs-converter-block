@@ -20,6 +20,7 @@ import {
 	metersToNauticalMiles,
 	metersToUsSurveyFeet,
 } from './index';
+import { format } from '../../format';
 import type { props } from '../../types';
 
 const convert = ( { input, from, to }: props ): number => {
@@ -38,7 +39,7 @@ const convert = ( { input, from, to }: props ): number => {
 		case 'yd': result = yardsToMeters( input ); break; // prettier-ignore
 		case 'mi': result = milesToMeters( input ); break; // prettier-ignore
 		case 'nmi': result = nauticalMilesToMeters( input ); break; // prettier-ignore
-		case 'us-ft': result = usSurveyFeetToMeters( input ); break; // prettier-ignore
+		case 'ft-us': result = usSurveyFeetToMeters( input ); break; // prettier-ignore
 		default: result = input; // prettier-ignore
 	}
 
@@ -56,7 +57,7 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return output;
+	return format( output, 6 );
 };
 
 export default convert;

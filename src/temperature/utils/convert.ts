@@ -6,6 +6,7 @@ import {
 	kelvinToFahrenheit,
 	kelvinToRankine,
 } from './index';
+import { format } from '../../format';
 import type { props } from '../../types';
 
 const convert = ( { input, from, to }: props ): number => {
@@ -28,7 +29,7 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return output;
+	return format( output );
 };
 
 export default convert;
