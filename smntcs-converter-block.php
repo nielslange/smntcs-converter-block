@@ -21,6 +21,7 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function smntcs_smntcs_converter_block_block_init() {
+	register_block_type( __DIR__ . '/build/area' );
 	register_block_type( __DIR__ . '/build/length' );
 	register_block_type( __DIR__ . '/build/mass' );
 	register_block_type( __DIR__ . '/build/speed' );
