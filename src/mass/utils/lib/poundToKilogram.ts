@@ -1,5 +1,5 @@
-const poundToKilogram = ( pound: number ): number => {
-	return pound * 0.45359;
+const poundToKilogram = ( n: number ): number => {
+	return n * 0.45359;
 };
 
 export default poundToKilogram;

@@ -1,5 +1,5 @@
-const kilogramToMicrogram = ( kilogram: number ): number => {
-	return kilogram * 1000000000;
+const kilogramToMicrogram = ( n: number ): number => {
+	return n * 1000000000;
 };
 
 export default kilogramToMicrogram;

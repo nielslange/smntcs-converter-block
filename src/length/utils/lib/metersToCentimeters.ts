@@ -1,5 +1,5 @@
-const metersToCentimeters = ( meters: number ): number => {
-	return meters * 100;
+const metersToCentimeters = ( n: number ): number => {
+	return n * 100;
 };
 
 export default metersToCentimeters;

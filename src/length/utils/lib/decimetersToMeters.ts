@@ -1,5 +1,5 @@
-const decimetersToMeters = ( decimeters: number ): number => {
-	return decimeters / 10;
+const decimetersToMeters = ( n: number ): number => {
+	return n / 10;
 };
 
 export default decimetersToMeters;

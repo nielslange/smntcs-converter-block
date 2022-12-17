@@ -1,5 +1,5 @@
-const metersToMillimeters = ( meters: number ): number => {
-	return meters * 1000;
+const metersToMillimeters = ( n: number ): number => {
+	return n * 1000;
 };
 
 export default metersToMillimeters;

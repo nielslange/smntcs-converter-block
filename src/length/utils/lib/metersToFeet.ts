@@ -1,5 +1,5 @@
-const metersToFeet = ( meters: number ): number => {
-	return meters / 0.3048;
+const metersToFeet = ( n: number ): number => {
+	return n / 0.3048;
 };
 
 export default metersToFeet;

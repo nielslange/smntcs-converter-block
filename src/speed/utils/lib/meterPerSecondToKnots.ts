@@ -1,5 +1,5 @@
-const meterPerSecondToKnots = ( meterPerSecond: number ): number => {
-	return meterPerSecond / 0.51444;
+const meterPerSecondToKnots = ( n: number ): number => {
+	return n / 0.51444;
 };
 
 export default meterPerSecondToKnots;

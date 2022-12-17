@@ -1,5 +1,5 @@
-const kilogramToMetricTon = ( kilogram: number ): number => {
-	return kilogram / 1000;
+const kilogramToMetricTon = ( n: number ): number => {
+	return n / 1000;
 };
 
 export default kilogramToMetricTon;

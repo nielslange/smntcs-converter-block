@@ -1,5 +1,5 @@
-const rankineToKelvin = ( rankine: number ): number => {
-	return +rankine * ( 5 / 9 );
+const rankineToKelvin = ( n: number ): number => {
+	return +n * ( 5 / 9 );
 };
 
 export default rankineToKelvin;

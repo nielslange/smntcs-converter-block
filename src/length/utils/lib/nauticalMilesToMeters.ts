@@ -1,5 +1,5 @@
-const nauticalMilesToMeters = ( nauticalMiles: number ): number => {
-	return nauticalMiles * 1852;
+const nauticalMilesToMeters = ( n: number ): number => {
+	return n * 1852;
 };
 
 export default nauticalMilesToMeters;

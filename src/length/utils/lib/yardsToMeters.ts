@@ -1,5 +1,5 @@
-const yardsToMeters = ( yards: number ): number => {
-	return yards * 0.9144;
+const yardsToMeters = ( n: number ): number => {
+	return n * 0.9144;
 };
 
 export default yardsToMeters;

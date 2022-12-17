@@ -1,5 +1,5 @@
-const metersToDecimeters = ( meters: number ): number => {
-	return meters * 10;
+const metersToDecimeters = ( n: number ): number => {
+	return n * 10;
 };
 
 export default metersToDecimeters;

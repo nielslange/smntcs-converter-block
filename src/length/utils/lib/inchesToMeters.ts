@@ -1,5 +1,5 @@
-const inchesToMeters = ( inches: number ): number => {
-	return inches * 0.0254;
+const inchesToMeters = ( n: number ): number => {
+	return n * 0.0254;
 };
 
 export default inchesToMeters;

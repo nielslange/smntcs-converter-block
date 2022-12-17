@@ -1,5 +1,5 @@
-const metersToNauticalMiles = ( meters: number ): number => {
-	return meters / 1852;
+const metersToNauticalMiles = ( n: number ): number => {
+	return n / 1852;
 };
 
 export default metersToNauticalMiles;

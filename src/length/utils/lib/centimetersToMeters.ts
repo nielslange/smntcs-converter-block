@@ -1,5 +1,5 @@
-const centimetersToMeters = ( centimeters: number ): number => {
-	return centimeters / 100;
+const centimetersToMeters = ( n: number ): number => {
+	return n / 100;
 };
 
 export default centimetersToMeters;

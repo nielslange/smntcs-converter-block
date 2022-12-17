@@ -1,5 +1,5 @@
-const kilogramToPound = ( kilogram: number ): number => {
-	return kilogram / 0.45359;
+const kilogramToPound = ( n: number ): number => {
+	return n / 0.45359;
 };
 
 export default kilogramToPound;

@@ -1,5 +1,5 @@
-const kilogramToTonne = ( kilogram: number ): number => {
-	return kilogram / 907.184;
+const kilogramToTonne = ( n: number ): number => {
+	return n / 907.184;
 };
 
 export default kilogramToTonne;

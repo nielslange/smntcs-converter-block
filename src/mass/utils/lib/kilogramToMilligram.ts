@@ -1,5 +1,5 @@
-const kilogramToMilligram = ( kilogram: number ): number => {
-	return kilogram * 1000000;
+const kilogramToMilligram = ( n: number ): number => {
+	return n * 1000000;
 };
 
 export default kilogramToMilligram;

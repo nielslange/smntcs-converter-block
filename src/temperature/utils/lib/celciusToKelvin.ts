@@ -1,5 +1,5 @@
-const celciusToKelvin = ( celcius: number ): number => {
-	return +celcius + 273.15;
+const celciusToKelvin = ( n: number ): number => {
+	return +n + 273.15;
 };
 
 export default celciusToKelvin;

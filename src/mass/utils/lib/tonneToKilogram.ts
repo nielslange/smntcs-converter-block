@@ -1,5 +1,5 @@
-const tonneToKilogram = ( tonne: number ): number => {
-	return tonne * 907.184;
+const tonneToKilogram = ( n: number ): number => {
+	return n * 907.184;
 };
 
 export default tonneToKilogram;
