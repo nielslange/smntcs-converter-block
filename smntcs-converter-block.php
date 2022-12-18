@@ -26,5 +26,6 @@ function smntcs_smntcs_converter_block_block_init() {
 	register_block_type( __DIR__ . '/build/mass' );
 	register_block_type( __DIR__ . '/build/speed' );
 	register_block_type( __DIR__ . '/build/temperature' );
+	register_block_type( __DIR__ . '/build/volume' );
 }
 add_action( 'init', 'smntcs_smntcs_converter_block_block_init' );
