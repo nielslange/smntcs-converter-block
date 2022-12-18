@@ -1,5 +1,5 @@
 const centilitersToCubikMeters = ( n: number ): number => {
-	return n * 0.00001;
+	return n * 1e-5;
 };
 
 export default centilitersToCubikMeters;

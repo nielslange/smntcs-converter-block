@@ -1,5 +1,5 @@
 const cubicMetersToDeciliters = ( n: number ): number => {
-	return n * 10000;
+	return n * 1e4;
 };
 
 export default cubicMetersToDeciliters;

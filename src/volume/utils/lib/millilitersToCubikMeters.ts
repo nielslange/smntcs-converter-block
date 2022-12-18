@@ -1,5 +1,5 @@
 const millilitersToCubikMeters = ( n: number ): number => {
-	return n * 0.000001;
+	return n * 1e-6;
 };
 
 export default millilitersToCubikMeters;
