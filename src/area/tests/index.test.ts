@@ -14,7 +14,7 @@ const cases = [
 	[ 23, 'mm²', 'ha', 0 ],
 	[ 23, 'mm²', 'ac', 0 ],
 
-	// // Square Centimeters (cm²)
+	// Square Centimeters (cm²)
 	[ 23, 'cm²', 'mm²', 2300 ],
 	[ 23, 'cm²', 'cm²', 23 ],
 	[ 23, 'cm²', 'dm²', 0.23 ],
@@ -27,7 +27,7 @@ const cases = [
 	[ 23, 'cm²', 'ha', 0 ],
 	[ 23, 'cm²', 'ac', 0.000001 ],
 
-	// // Square Decimeters (dm²)
+	// Square Decimeters (dm²)
 	[ 23, 'dm²', 'mm²', 230000 ],
 	[ 23, 'dm²', 'cm²', 2300 ],
 	[ 23, 'dm²', 'dm²', 23 ],
@@ -40,7 +40,7 @@ const cases = [
 	[ 23, 'dm²', 'ha', 0.000023 ],
 	[ 23, 'dm²', 'ac', 0.000057 ],
 
-	// // Square Meters (m²)
+	// Square Meters (m²)
 	[ 23, 'm²', 'mm²', 2.3e7 ],
 	[ 23, 'm²', 'cm²', 230000 ],
 	[ 23, 'm²', 'dm²', 2300 ],
@@ -53,7 +53,7 @@ const cases = [
 	[ 23, 'm²', 'ha', 0.0023 ],
 	[ 23, 'm²', 'ac', 0.005683 ],
 
-	// // Square Kilometers (km²)
+	// Square Kilometers (km²)
 	[ 23, 'km²', 'mm²', 2.3e13 ],
 	[ 23, 'km²', 'cm²', 2.3e11 ],
 	[ 23, 'km²', 'dm²', 2.3e9 ],
@@ -66,7 +66,7 @@ const cases = [
 	[ 23, 'km²', 'ha', 2300 ],
 	[ 23, 'km²', 'ac', 5683.423774 ],
 
-	// // Square Inches (in²)
+	// Square Inches (in²)
 	[ 23, 'in²', 'mm²', 14838.709677 ],
 	[ 23, 'in²', 'cm²', 148.387097 ],
 	[ 23, 'in²', 'dm²', 1.483871 ],
@@ -79,7 +79,7 @@ const cases = [
 	[ 23, 'in²', 'ha', 0.000001 ],
 	[ 23, 'in²', 'ac', 0.000004 ],
 
-	// // Square Feet (ft²)
+	// Square Feet (ft²)
 	[ 23, 'ft²', 'mm²', 2136752.136752 ],
 	[ 23, 'ft²', 'cm²', 21367.521368 ],
 	[ 23, 'ft²', 'dm²', 213.675214 ],
@@ -92,7 +92,7 @@ const cases = [
 	[ 23, 'ft²', 'ha', 0.000214 ],
 	[ 23, 'ft²', 'ac', 0.000528 ],
 
-	// // Square Yards (yd²)
+	// Square Yards (yd²)
 	[ 23, 'yd²', 'mm²', 19230930.024499 ],
 	[ 23, 'yd²', 'cm²', 192309.300245 ],
 	[ 23, 'yd²', 'dm²', 1923.093002 ],
@@ -105,20 +105,20 @@ const cases = [
 	[ 23, 'yd²', 'ha', 0.001923 ],
 	[ 23, 'yd²', 'ac', 0.004752 ],
 
-	// // Square Miles (mi²)
-	[ 23, 'mi²', 'mm²', 59569726537728.01 ],
+	// Square Miles (mi²)
+	[ 23, 'mi²', 'mm²', 59569726537728 ],
 	[ 23, 'mi²', 'cm²', 595697265377.28 ],
 	[ 23, 'mi²', 'dm²', 5956972653.7728 ],
 	[ 23, 'mi²', 'm²', 59569726.537728 ],
 	[ 23, 'mi²', 'km²', 59.569727 ],
-	[ 23, 'mi²', 'in²', 92333076133.47841 ],
+	[ 23, 'mi²', 'in²', 92333076133.4784 ],
 	[ 23, 'mi²', 'ft²', 641202579.47945 ],
 	[ 23, 'mi²', 'yd²', 71244800 ],
 	[ 23, 'mi²', 'mi²', 23 ],
 	[ 23, 'mi²', 'ha', 5956.972654 ],
 	[ 23, 'mi²', 'ac', 14720 ],
 
-	// // Hectares (ha)
+	// Hectares (ha)
 	[ 23, 'ha', 'mm²', 2.3e11 ],
 	[ 23, 'ha', 'cm²', 2.3e9 ],
 	[ 23, 'ha', 'dm²', 2.3e7 ],
@@ -131,7 +131,7 @@ const cases = [
 	[ 23, 'ha', 'ha', 23 ],
 	[ 23, 'ha', 'ac', 56.834238 ],
 
-	// // Acres (ac)
+	// Acres (ac)
 	[ 23, 'ac', 'mm²', 93077697715.2 ],
 	[ 23, 'ac', 'cm²', 930776977.152 ],
 	[ 23, 'ac', 'dm²', 9307769.77152 ],
@@ -147,6 +147,6 @@ const cases = [
 
 describe( 'Convert area', () => {
 	test.each( cases )( '%f %s to %s equals %f', ( input: number, from: string, to: string, output: number ) => {
-		expect( convert( { input, from, to } ) ).toBe( output );
+		expect( convert( { input, from, to, precision: 6 } ) ).toBe( output );
 	} );
 } );

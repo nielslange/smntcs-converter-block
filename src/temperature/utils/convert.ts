@@ -9,7 +9,7 @@ import {
 import { format } from '../../format';
 import type { props } from '../../types';
 
-const convert = ( { input, from, to }: props ): number => {
+const convert = ( { input, from, to, precision = 2 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
@@ -29,7 +29,7 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return format( output );
+	return format( output, precision );
 };
 
 export default convert;

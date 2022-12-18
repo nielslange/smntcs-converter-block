@@ -17,11 +17,12 @@ import {
 import { format } from '../../format';
 import type { props } from '../../types';
 
-const convert = ( { input, from, to }: props ): number => {
+const convert = ( { input, from, to, precision = 10 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
 	let output = 0;
+	let multiplyer = 1e10;
 
 	switch ( from ) {
 		case 'µg': result = microgramToKilogram( input ); break; // prettier-ignore
@@ -34,6 +35,8 @@ const convert = ( { input, from, to }: props ): number => {
 		default: result = input; // prettier-ignore
 	}
 
+	result *= multiplyer;
+
 	switch ( to ) {
 		case 'µg': output = kilogramToMicrogram( result ); break; // prettier-ignore
 		case 'mg': output = kilogramToMilligram( result ); break; // prettier-ignore
@@ -45,7 +48,9 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return format( output, 10 );
+	output /= multiplyer;
+
+	return format( output, precision );
 };
 
 export default convert;

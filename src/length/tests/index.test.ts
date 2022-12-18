@@ -147,6 +147,6 @@ const cases = [
 
 describe( 'Convert length', () => {
 	test.each( cases )( '%f %s to %s equals %f', ( input: number, from: string, to: string, output: number ) => {
-		expect( convert( { input, from, to } ) ).toBe( output );
+		expect( convert( { input, from, to, precision: 6 } ) ).toBe( output );
 	} );
 } );

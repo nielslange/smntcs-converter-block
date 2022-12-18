@@ -23,11 +23,12 @@ import {
 import { format } from '../../format';
 import type { props } from '../../types';
 
-const convert = ( { input, from, to }: props ): number => {
+const convert = ( { input, from, to, precision = 6 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
 	let output = 0;
+	let multiplyer = 1e10;
 
 	switch ( from ) {
 		case 'mm': result = millimetersToMeters( input ); break; // prettier-ignore
@@ -43,6 +44,8 @@ const convert = ( { input, from, to }: props ): number => {
 		default: result = input; // prettier-ignore
 	}
 
+	result *= multiplyer;
+
 	switch ( to ) {
 		case 'mm': output = metersToMillimeters( result ); break; // prettier-ignore
 		case 'cm': output = metersToCentimeters( result ); break; // prettier-ignore
@@ -57,7 +60,9 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return format( output, 6 );
+	output /= multiplyer;
+
+	return format( output, precision );
 };
 
 export default convert;

@@ -11,11 +11,12 @@ import {
 import { format } from '../../format';
 import type { props } from '../../types';
 
-const convert = ( { input, from, to }: props ): number => {
+const convert = ( { input, from, to, precision = 2 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
 	let output = 0;
+	let multiplyer = 1e10;
 
 	switch ( from ) {
 		case 'km/h': result = kilometersPerHourToMeterPerSecond( input ); break; // prettier-ignore
@@ -25,6 +26,8 @@ const convert = ( { input, from, to }: props ): number => {
 		default: result = input; // prettier-ignore
 	}
 
+	result *= multiplyer;
+
 	switch ( to ) {
 		case 'km/h': output = meterPerSecondToKilometersPerHour( result ); break; // prettier-ignore
 		case 'm/h': output = meterPerSecondToMilesPerHour( result ); break; // prettier-ignore
@@ -33,7 +36,9 @@ const convert = ( { input, from, to }: props ): number => {
 		default: output = result; // prettier-ignore
 	}
 
-	return format( output, 2 );
+	output /= multiplyer;
+
+	return format( output, precision );
 };
 
 export default convert;

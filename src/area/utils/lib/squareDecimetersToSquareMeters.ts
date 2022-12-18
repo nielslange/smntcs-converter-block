@@ -1,5 +1,5 @@
 const squareDecimetersToSquareMeters = ( n: number ): number => {
-	return n / 100;
+	return n * 1e-2;
 };
 
 export default squareDecimetersToSquareMeters;

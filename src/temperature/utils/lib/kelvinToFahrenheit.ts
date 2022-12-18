@@ -1,5 +1,5 @@
 const kelvinToFahrenheit = ( n: number ): number => {
-	return ( +n * 9 ) / 5 - 459.67;
+	return ( n - 273.15 ) * ( 9 / 5 ) + 32;
 };
 
 export default kelvinToFahrenheit;
