@@ -25,7 +25,6 @@ export default function Save() {
 						<option value="dl">Deciliters (dl)</option>
 						<option value="l">Liters (l)</option>
 						<option value="kl">Kiloliters (kl)</option>
-						<option value="hl">Hectoliters (hl)</option>
 					</select>
 				</div>
 				<div>
@@ -43,7 +42,6 @@ export default function Save() {
 						<option value="dl">Deciliters (dl)</option>
 						<option value="l">Liters (l)</option>
 						<option value="kl">Kiloliters (kl)</option>
-						<option value="hl">Hectoliters (hl)</option>
 					</select>
 				</div>
 			</form>

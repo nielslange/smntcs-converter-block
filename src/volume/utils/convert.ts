@@ -30,6 +30,9 @@ const convert = ( { input, from, to, precision = 6 }: props ): number => {
 	let output = 0;
 	let multiplyer = 1e10;
 
+	// Deactivate multiplyer for volume conversions.
+	// input *= multiplyer;
+
 	switch ( from ) {
 		case 'mm³': result = cubicMillimetersToCubikMeters( input ); break; // prettier-ignore
 		case 'cm³': result = cubicCentimetersToCubikMeters( input ); break; // prettier-ignore
