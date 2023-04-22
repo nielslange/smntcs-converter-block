@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "smntcs/output-block",
+	"version": "1.0.0",
+	"title": "Output Block",
+	"icon": "randomize",
+	"description": "Outputs teh result of teh individual conversion blocks.",
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"multiple": false
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"id": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "smntcs-converter-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

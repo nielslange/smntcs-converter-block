@@ -52,9 +52,6 @@ export default function Block() {
 						</select>
 					</div>
 				</form>
-				<div className="result" id="area-output">
-					0 mm² = 0 cm²
-				</div>
 			</Disabled>
 		</div>
 	);

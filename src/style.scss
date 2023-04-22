@@ -36,12 +36,18 @@
 		}
 	}
 
-	.result {
+	&.wp-block-smntcs-output-block {
 		border-radius: 3px;
-		border: 1px solid #b8daff;
-		background: #cce5ff;
-		color: #004085;
-		margin-top: 20px;
-		padding: 10px;
+
+		.result {
+			border-radius: 3px;
+			background: #cce5ff;
+			color: #004085;
+			margin-top: 20px;
+			padding: 10px;
+
+			background: inherit;
+			color: inherit;
+		}
 	}
 }
