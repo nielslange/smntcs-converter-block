@@ -8,7 +8,7 @@ import { Disabled } from '@wordpress/components';
 /**
  * Internal dependencies
  */
-import '../style.scss';
+import './style.scss';
 
 export default function Block() {
 	return (

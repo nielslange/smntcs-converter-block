@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name:       SMNTCS Converter Block
+ * Plugin URI:		  https://github.com/nielslange/smntcs-converter-block/
  * Description:       A  collection of various converter blocks.
  * Requires at least: 6.1
  * Requires PHP:      7.0
@@ -22,6 +23,9 @@
  */
 function smntcs_smntcs_converter_block_block_init() {
 	register_block_type( __DIR__ . '/build/area' );
+	register_block_type( __DIR__ . '/build/area-block' );
+	register_block_type( __DIR__ . '/build/area-form' );
+	register_block_type( __DIR__ . '/build/output-block' );
 	register_block_type( __DIR__ . '/build/digital' );
 	register_block_type( __DIR__ . '/build/length' );
 	register_block_type( __DIR__ . '/build/mass' );

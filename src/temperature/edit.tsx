@@ -8,7 +8,7 @@ import { Disabled } from '@wordpress/components';
 /**
  * Internal dependencies
  */
-import '../style.scss';
+import './style.scss';
 
 export default function Block() {
 	return (
@@ -16,19 +16,11 @@ export default function Block() {
 			<Disabled>
 				<form>
 					<div>
-						<label htmlFor="temperature-input">
-							{ __( 'Input', 'smntcs-converter-block' ) }
-						</label>
-						<input
-							type="number"
-							id="temperature-input"
-							placeholder="0"
-						/>
+						<label htmlFor="temperature-input">{ __( 'Input', 'smntcs-converter-block' ) }</label>
+						<input type="number" id="temperature-input" placeholder="0" />
 					</div>
 					<div>
-						<label htmlFor="temperature-from">
-							{ __( 'From', 'smntcs-converter-block' ) }
-						</label>
+						<label htmlFor="temperature-from">{ __( 'From', 'smntcs-converter-block' ) }</label>
 						<select id="temperature-from">
 							<option value="°C">Celsius (°C)</option>
 							<option value="°F">Fahrenheit (°F)</option>
@@ -37,9 +29,7 @@ export default function Block() {
 						</select>
 					</div>
 					<div>
-						<label htmlFor="temperature-to">
-							{ __( 'To', 'smntcs-converter-block' ) }
-						</label>
+						<label htmlFor="temperature-to">{ __( 'To', 'smntcs-converter-block' ) }</label>
 						<select id="temperature-to">
 							<option value="°C">Celsius (°C)</option>
 							<option value="°F" selected>
