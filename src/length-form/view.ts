@@ -1,7 +1,7 @@
 import convert from './utils/convert';
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-length-converter' );
+	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-length-block' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
 	let output = block.querySelector< HTMLDivElement >( '#length-output' ); // eslint-disable-line prefer-const
 

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "smntcs/length-form",
+	"version": "1.0.0",
+	"title": "Length Converter Form",
+	"category": "widgets",
+	"icon": "randomize",
+	"description": "Convert lengths between different units.",
+	"supports": {
+		"html": false,
+		"inserter": false,
+		"multiple": false
+	},
+	"textdomain": "smntcs-converter-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

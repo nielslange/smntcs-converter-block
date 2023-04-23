@@ -54,9 +54,6 @@ export default function Block() {
 						</select>
 					</div>
 				</form>
-				<div className="result" id="length-output">
-					0 mm = 0 cm
-				</div>
 			</Disabled>
 		</div>
 	);
