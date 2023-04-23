@@ -45,9 +45,6 @@ export default function Save() {
 					</select>
 				</div>
 			</form>
-			<div className="result" id="volume-output">
-				0 mm³ = 0 dm³
-			</div>
 		</div>
 	);
 }
