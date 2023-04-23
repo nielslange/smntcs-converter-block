@@ -1,7 +1,7 @@
 import convert from './utils/convert';
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-temperature-converter' );
+	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-temperature-block' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
 	let output = block.querySelector< HTMLDivElement >( '#temperature-output' ); // eslint-disable-line prefer-const
 
