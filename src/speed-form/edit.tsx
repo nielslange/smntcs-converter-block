@@ -42,9 +42,6 @@ export default function Block() {
 						</select>
 					</div>
 				</form>
-				<div className="result" id="speed-output">
-					0 m/s = 0 km/h
-				</div>
 			</Disabled>
 		</div>
 	);
