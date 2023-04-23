@@ -27,9 +27,6 @@ const convert = ( { input, from, to, precision = 6 }: props ): number => {
 	let result = 0;
 	let output = 0;
 
-	console.log( { from } );
-	console.log( { to } );
-
 	switch ( from ) {
 		case 'b': result = bitToByte( input ); break; // prettier-ignore
 		case 'kb': result = kilobitToByte( input ); break; // prettier-ignore

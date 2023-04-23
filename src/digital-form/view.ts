@@ -11,8 +11,6 @@ document.addEventListener( 'DOMContentLoaded', function () {
 		const to = block.querySelector< HTMLSelectElement >( '#digital-to' ).value;
 		const result = convert( { input: parseInt( input ), from, to, precision: 12 } );
 
-		console.log( result );
-
 		output.innerHTML = `${ input } ${ from } = ${ result } ${ to }`;
 	};
 
