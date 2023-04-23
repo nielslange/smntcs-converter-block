@@ -47,9 +47,6 @@ export default function Save() {
 					</select>
 				</div>
 			</form>
-			<div className="result" id="length-output">
-				0 mm = 0 cm
-			</div>
 		</div>
 	);
 }
