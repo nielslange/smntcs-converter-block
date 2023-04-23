@@ -3,7 +3,7 @@ import convert from './utils/convert';
 document.addEventListener( 'DOMContentLoaded', function () {
 	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-length-converter' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	let output = block.querySelector< HTMLDivElement >( '#length-output' );
+	const output = block.querySelector< HTMLDivElement >( '#length-output' );
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#length-input' ).value || '0';

@@ -15,8 +15,8 @@ const convert = ( { input, from, to, precision = 2 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
-	let output = 0;
-	let multiplyer = 1e10;
+	const output = 0;
+	const multiplyer = 1e10;
 
 	switch ( from ) {
 		case 'km/h': result = kilometersPerHourToMeterPerSecond( input ); break; // prettier-ignore

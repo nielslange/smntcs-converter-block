@@ -3,7 +3,7 @@ import convert from './utils/convert';
 document.addEventListener( 'DOMContentLoaded', function () {
 	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-speed-converter' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	let output = block.querySelector< HTMLDivElement >( '#speed-output' );
+	const output = block.querySelector< HTMLDivElement >( '#speed-output' );
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#speed-input' ).value || '0';

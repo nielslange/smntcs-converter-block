@@ -3,7 +3,7 @@ import convert from './utils/convert';
 document.addEventListener( 'DOMContentLoaded', function () {
 	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-temperature-converter' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	let output = block.querySelector< HTMLDivElement >( '#temperature-output' );
+	const output = block.querySelector< HTMLDivElement >( '#temperature-output' );
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#temperature-input' ).value || '0';

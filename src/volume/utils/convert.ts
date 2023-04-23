@@ -27,8 +27,8 @@ const convert = ( { input, from, to, precision = 6 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
-	let output = 0;
-	let multiplyer = 1e10;
+	const output = 0;
+	const multiplyer = 1e10;
 
 	// Deactivate multiplyer for volume conversions.
 	// input *= multiplyer;
