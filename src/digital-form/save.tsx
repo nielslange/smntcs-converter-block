@@ -45,9 +45,6 @@ export default function Save() {
 					</select>
 				</div>
 			</form>
-			<div className="result" id="digital-output">
-				0 b = 0 kb
-			</div>
 		</div>
 	);
 }

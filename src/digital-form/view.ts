@@ -1,9 +1,9 @@
 import convert from './utils/convert';
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-digital-converter' );
+	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-digital-block' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	const output = block.querySelector< HTMLDivElement >( '#digital-output' );
+	let output = block.querySelector< HTMLDivElement >( '#digital-output' ); // eslint-disable-line prefer-const
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#digital-input' ).value || '0';
