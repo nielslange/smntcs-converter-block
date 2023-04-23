@@ -40,9 +40,6 @@ export default function Block() {
 						</select>
 					</div>
 				</form>
-				<div className="result" id="temperature-output">
-					0 °C = 32 °F
-				</div>
 			</Disabled>
 		</div>
 	);

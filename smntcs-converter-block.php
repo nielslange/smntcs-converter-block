@@ -33,7 +33,8 @@ function smntcs_smntcs_converter_block_block_init() {
 	register_block_type( __DIR__ . '/build/output-block' );
 	register_block_type( __DIR__ . '/build/speed-block' );
 	register_block_type( __DIR__ . '/build/speed-form' );
-	register_block_type( __DIR__ . '/build/temperature' );
+	register_block_type( __DIR__ . '/build/temperature-block' );
+	register_block_type( __DIR__ . '/build/temperature-form' );
 	register_block_type( __DIR__ . '/build/volume' );
 
 }

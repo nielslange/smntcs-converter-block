@@ -33,9 +33,6 @@ export default function Save() {
 					</select>
 				</div>
 			</form>
-			<div className="result" id="temperature-output">
-				0 °C = 32 °F
-			</div>
 		</div>
 	);
 }
