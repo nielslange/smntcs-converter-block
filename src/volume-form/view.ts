@@ -1,7 +1,7 @@
 import convert from './utils/convert';
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-volume-converter' );
+	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-volume-block' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
 	let output = block.querySelector< HTMLDivElement >( '#volume-output' ); // eslint-disable-line prefer-const
 

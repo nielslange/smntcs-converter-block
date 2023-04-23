@@ -1,19 +1,22 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "smntcs/volume-converter",
+	"name": "smntcs/volume-block",
 	"version": "1.0.0",
-	"title": "Volume Converter",
+	"title": "Volume Converter Block",
 	"category": "widgets",
 	"icon": "randomize",
-	"description": "Convert volumes between different units.",
+	"description": "Convert volume between different units.",
 	"supports": {
+		"color": {
+			"text": true,
+			"background": true
+		},
 		"html": false,
 		"multiple": false
 	},
 	"textdomain": "smntcs-converter-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css",
-	"viewScript": "file:./view.js"
+	"style": "file:./style-index.css"
 }
