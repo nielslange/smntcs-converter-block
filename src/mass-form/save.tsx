@@ -41,9 +41,6 @@ export default function Save() {
 					</select>
 				</div>
 			</form>
-			<div className="result" id="mass-output">
-				0 µg = 0 mg
-			</div>
 		</div>
 	);
 }

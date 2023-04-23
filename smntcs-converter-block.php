@@ -22,17 +22,18 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function smntcs_smntcs_converter_block_block_init() {
-	register_block_type( __DIR__ . '/build/area' );
 	register_block_type( __DIR__ . '/build/area-block' );
 	register_block_type( __DIR__ . '/build/area-form' );
-	register_block_type( __DIR__ . '/build/output-block' );
 	register_block_type( __DIR__ . '/build/digital-block' );
 	register_block_type( __DIR__ . '/build/digital-form' );
 	register_block_type( __DIR__ . '/build/length-block' );
 	register_block_type( __DIR__ . '/build/length-form' );
-	register_block_type( __DIR__ . '/build/mass' );
+	register_block_type( __DIR__ . '/build/mass-block' );
+	register_block_type( __DIR__ . '/build/mass-form' );
+	register_block_type( __DIR__ . '/build/output-block' );
 	register_block_type( __DIR__ . '/build/speed' );
 	register_block_type( __DIR__ . '/build/temperature' );
 	register_block_type( __DIR__ . '/build/volume' );
+
 }
 add_action( 'init', 'smntcs_smntcs_converter_block_block_init' );

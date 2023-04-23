@@ -48,9 +48,6 @@ export default function Block() {
 						</select>
 					</div>
 				</form>
-				<div className="result" id="mass-output">
-					0 µg = 0 mg
-				</div>
 			</Disabled>
 		</div>
 	);
