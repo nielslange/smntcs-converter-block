@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"title": "Output Block",
 	"icon": "randomize",
-	"description": "Outputs teh result of teh individual conversion blocks.",
+	"description": "Outputs the conversion result.",
 	"supports": {
 		"html": false,
 		"inserter": false,

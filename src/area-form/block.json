@@ -6,7 +6,7 @@
 	"title": "Area Converter Form",
 	"category": "widgets",
 	"icon": "randomize",
-	"description": "Convert areas between different units.",
+	"description": "Accepts the area conversion input.",
 	"supports": {
 		"html": false,
 		"inserter": false,
