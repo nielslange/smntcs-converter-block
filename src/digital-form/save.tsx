@@ -22,9 +22,9 @@ export default function Save() {
 						<option value="tb">Terabit (tb)</option>
 						<option value="B">Byte (B)</option>
 						<option value="kB">Kilobyte (kB)</option>
-						<option value="mB">Megabyte (mB)</option>
-						<option value="gB">Gigabyte (gB)</option>
-						<option value="tB">Terabyte (tB)</option>
+						<option value="MB">Megabyte (MB)</option>
+						<option value="GB">Gigabyte (GB)</option>
+						<option value="TB">Terabyte (TB)</option>
 					</select>
 				</div>
 				<div>
@@ -39,9 +39,9 @@ export default function Save() {
 						<option value="tb">Terabit (tb)</option>
 						<option value="B">Byte (B)</option>
 						<option value="kB">Kilobyte (kB)</option>
-						<option value="mB">Megabyte (mB)</option>
-						<option value="gB">Gigabyte (gB)</option>
-						<option value="tB">Terabyte (tB)</option>
+						<option value="MB">Megabyte (MB)</option>
+						<option value="GB">Gigabyte (GB)</option>
+						<option value="TB">Terabyte (TB)</option>
 					</select>
 				</div>
 			</form>
