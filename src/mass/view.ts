@@ -3,7 +3,7 @@ import convert from './utils/convert';
 document.addEventListener( 'DOMContentLoaded', function () {
 	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-mass-converter' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	const output = block.querySelector< HTMLDivElement >( '#mass-output' );
+	let output = block.querySelector< HTMLDivElement >( '#mass-output' ); // eslint-disable-line prefer-const
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#mass-input' ).value || '0';

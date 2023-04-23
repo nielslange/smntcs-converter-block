@@ -26,6 +26,7 @@ function smntcs_smntcs_converter_block_block_init() {
 	register_block_type( __DIR__ . '/build/area-block' );
 	register_block_type( __DIR__ . '/build/area-form' );
 	register_block_type( __DIR__ . '/build/output-block' );
+	register_block_type( __DIR__ . '/build/digital-block' );
 	register_block_type( __DIR__ . '/build/digital' );
 	register_block_type( __DIR__ . '/build/length' );
 	register_block_type( __DIR__ . '/build/mass' );
