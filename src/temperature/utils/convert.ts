@@ -13,7 +13,7 @@ const convert = ( { input, from, to, precision = 2 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
-	let output = 0;
+	const output = 0;
 
 	switch ( from ) {
 		case '°C': result = celciusToKelvin(input); break; // prettier-ignore

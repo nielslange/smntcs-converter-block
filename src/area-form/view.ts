@@ -3,7 +3,7 @@ import convert from './utils/convert';
 document.addEventListener( 'DOMContentLoaded', function () {
 	const block = document.querySelector< HTMLDivElement >( '.wp-block-smntcs-area-block' );
 	const form = block.querySelector< HTMLFormElement >( 'form' );
-	let output = block.querySelector< HTMLDivElement >( '#area-output' ); // eslint-disable-line prefer-const
+	const output = block.querySelector< HTMLDivElement >( '#area-output' );
 
 	const render = () => {
 		const input = block.querySelector< HTMLInputElement >( '#area-input' ).value || '0';

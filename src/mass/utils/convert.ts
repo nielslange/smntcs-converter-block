@@ -21,7 +21,7 @@ const convert = ( { input, from, to, precision = 10 }: props ): number => {
 	if ( from === to ) return input;
 
 	let result = 0;
-	let output = 0;
+	const output = 0;
 	const multiplyer = 1e10;
 
 	switch ( from ) {

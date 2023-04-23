@@ -1,8 +1,3 @@
-.editor-styles-wrapper .smntcs-converter-block.editor-block-list__block,
-.editor-styles-wrapper .smntcs-converter-block.block-editor-block-list__block:not(:has(div.has-background-dim)) {
-	color: inherit;
-}
-
 .smntcs-converter-block {
 	form {
 		display: grid;
@@ -24,7 +19,6 @@
 		}
 
 		label {
-			color: inherit;
 			display: block;
 			margin: 0;
 			padding: 0 0 5px;
