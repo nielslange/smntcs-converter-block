@@ -11,6 +11,18 @@
 			"text": true,
 			"background": true
 		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
 		"html": false,
 		"inserter": false,
 		"multiple": false
@@ -23,6 +35,11 @@
 		"id": {
 			"type": "string",
 			"default": ""
+		}
+	},
+	"example": {
+		"attributes": {
+			"isPreview": true
 		}
 	},
 	"textdomain": "smntcs-converter-block",
