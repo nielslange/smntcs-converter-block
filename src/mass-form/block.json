@@ -8,6 +8,10 @@
 	"icon": "randomize",
 	"description": "Convert mass between different units.",
 	"supports": {
+		"color": {
+			"text": true,
+			"background": true
+		},
 		"html": false,
 		"inserter": false,
 		"multiple": false

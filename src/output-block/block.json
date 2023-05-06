@@ -7,6 +7,10 @@
 	"icon": "randomize",
 	"description": "Outputs the conversion result.",
 	"supports": {
+		"color": {
+			"text": true,
+			"background": true
+		},
 		"html": false,
 		"inserter": false,
 		"multiple": false
