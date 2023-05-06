@@ -8,6 +8,10 @@
 	"icon": "randomize",
 	"description": "Accepts the area conversion input.",
 	"supports": {
+		"color": {
+			"text": true,
+			"background": true
+		},
 		"html": false,
 		"inserter": false,
 		"multiple": false
